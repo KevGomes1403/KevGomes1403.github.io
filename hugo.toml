@@ -1,0 +1,36 @@
+# hugo.toml
+baseURL = "https://kevingomes.dev/"
+title   = "Kevin Gomes"
+theme   = "PaperMod"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          # Use literal (single-quoted) strings so backslashes are not eaten
+          block  = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]
+
+[params]
+  disableHomepageContent = true
+  mainSections = []
+  math = true
+
+[taxonomies]
+  category = "categories"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 2
+
