@@ -5,7 +5,7 @@ title: "Welcome"
 <div style="display:flex; align-items:flex-start; gap:2rem; flex-wrap:wrap;">
   <!-- Left column: photo + social icons -->
   <div style="display:flex; flex-direction:column; align-items:center; gap:0.75rem; max-width:40%; min-width:220px;">
-    <img src="/images/profile.JPG" alt="Kevin Gomes" style="width:min(320px, 40vw); aspect-ratio:1/1; object-fit:cover; border-radius:10%;" />
+    <img src="/images/profile.jpg" alt="Kevin Gomes" style="width:min(320px, 40vw); aspect-ratio:1/1; object-fit:cover; border-radius:10%;" />
     <!-- Social Icons (inline SVG, theme-friendly via currentColor) -->
     <div style="display:flex; gap:0.75rem; margin-top:0.25rem;">
       <!-- GitHub -->
