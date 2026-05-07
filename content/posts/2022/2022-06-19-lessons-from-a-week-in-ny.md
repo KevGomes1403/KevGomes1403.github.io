@@ -1,6 +1,8 @@
 ---
 title: "Lessons From a Week in NY"
 date: 2022-06-19
+categories:
+  - "personal"
 tags: 
   - "family"
   - "travel"

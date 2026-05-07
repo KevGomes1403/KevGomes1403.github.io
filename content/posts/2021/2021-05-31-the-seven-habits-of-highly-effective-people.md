@@ -1,6 +1,10 @@
 ---
 title: "The Seven Habits of Highly Effective People"
 date: 2021-05-31
+categories:
+  - "personal"
+tags:
+  - "books"
 ---
 
 # The Book in 3 Sentences

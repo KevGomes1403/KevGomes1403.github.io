@@ -1,6 +1,8 @@
 ---
 title: "Reflecting On A Month in Portugal"
 date: 2022-08-08
+categories:
+  - "personal"
 ---
 
 I spent 4 weeks in Portugal studying abroad, the first being in Lisbon and the following 3 weeks in Porto. I participated in the [European Innovation Academy](https://www.inacademy.eu/portugal/), an entrepreneurship program that hosted keynotes by Silicon Valley professionals and required students to build and develop a startup in teams of 5.

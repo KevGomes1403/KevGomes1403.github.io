@@ -1,6 +1,8 @@
 ---
 title: "The Ultimate Toolkit for Physical Performance and Skill Acquisition"
 date: 2022-05-21
+categories:
+  - "personal"
 tags: 
   - "andrew-huberman"
   - "cold-shower"

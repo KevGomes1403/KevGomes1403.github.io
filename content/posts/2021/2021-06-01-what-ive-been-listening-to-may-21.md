@@ -1,6 +1,8 @@
 ---
 title: "What I've been listening to (May 21)"
 date: 2021-06-01
+categories:
+  - "personal"
 ---
 
 [Stats for Spotify](http://statsforspotify.com) is my primary tool for tracking my listening habits.

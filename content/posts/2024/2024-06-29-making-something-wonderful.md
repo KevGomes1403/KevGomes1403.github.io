@@ -1,6 +1,8 @@
 ---
 title: "Making Something Wonderful"
 date: 2024-06-29
+categories:
+  - "personal"
 ---
 
 At the dawn of the age of computing, one man was launching products that caused step-function transformations across numerous industries - personal computing, music, education, filmmaking etc. Having started Apple by first building computers in his garage, Steve Jobs went on to lead world-class teams that created the first Macintosh, iPod, iPad, and iPhone. To most people's surprise, he was also pivotal in taking Pixar off the ground, initiating an era of powerful storytelling through 3D computer graphics.

@@ -32,6 +32,6 @@ title: "Welcome"
       I'm an M.Eng student in ECE at Cornell University where I'm advised by <a href="https://www.csl.cornell.edu/~zhiruz/">Zhiru Zhang</a>. I'm specializing in computer architecture and systems software, and I'm doing my thesis on efficient open-source LLM inference on AWS Trainium.<br><br>
       My background is in VLSI design for pushing CPU performance. I'm now exploring new architectural and software optimizations to drive performance at the SoC and accelerator level.
     </p>
-    <p><a href="/posts">Check out my latest blog posts →</a></p>
+    <p><a href="/categories/technical/">Technical notes</a> · <a href="/categories/personal/">Personal essays</a></p>
   </div>
 </div>

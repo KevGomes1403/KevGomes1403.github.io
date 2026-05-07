@@ -1,6 +1,8 @@
 ---
 title: "Vulnerability, Connection, and People"
 date: 2025-10-25
+categories:
+  - "personal"
 ---
 
 > For that dash represents all the time

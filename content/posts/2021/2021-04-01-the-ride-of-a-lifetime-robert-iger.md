@@ -1,7 +1,9 @@
 ---
 title: "The Ride of a Lifetime - Robert Iger"
 date: 2021-04-01
-categories: 
+categories:
+  - "personal"
+tags:
   - "books"
 ---
 

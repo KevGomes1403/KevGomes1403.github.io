@@ -1,6 +1,10 @@
 ---
 title: "The Watchmen by Alan Moore"
 date: 2021-10-28
+categories:
+  - "personal"
+tags:
+  - "books"
 ---
 
 ## What It's About

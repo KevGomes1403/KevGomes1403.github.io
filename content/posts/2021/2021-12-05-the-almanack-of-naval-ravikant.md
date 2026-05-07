@@ -1,6 +1,10 @@
 ---
 title: "The Almanac of Naval Ravikant"
 date: 2021-12-05
+categories:
+  - "personal"
+tags:
+  - "books"
 ---
 
 ## The Book in 3 Sentences

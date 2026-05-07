@@ -1,6 +1,8 @@
 ---
 title: "A Recalibration"
 date: 2024-06-09
+categories:
+  - "personal"
 tags: 
   - "blog"
   - "life"

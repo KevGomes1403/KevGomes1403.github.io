@@ -1,6 +1,8 @@
 ---
 title: "On Seeking the Awakening"
 date: 2022-05-16
+categories:
+  - "personal"
 tags: 
   - "consciousness"
   - "meditation"

@@ -1,6 +1,8 @@
 ---
 title: "An Unstructured Summer"
 date: 2022-06-02
+categories:
+  - "personal"
 tags: 
   - "biking"
   - "productivity"

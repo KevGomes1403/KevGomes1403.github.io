@@ -1,6 +1,10 @@
 ---
 title: "The 48 Laws of Power by Robert Greene"
 date: 2021-04-01
+categories:
+  - "personal"
+tags:
+  - "books"
 ---
 
 ## The Book in 3 Sentences

@@ -1,6 +1,8 @@
 ---
 title: "Thought Dump (June 21)"
 date: 2021-07-02
+categories:
+  - "personal"
 ---
 
 ![](/images/image-1.png)

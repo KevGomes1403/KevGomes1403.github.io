@@ -1,6 +1,8 @@
 ---
 title: "Feelings Are Hard to Share"
 date: 2024-11-23
+categories:
+  - "personal"
 ---
 
 I’m really into Stoicism. In fact, I gave a speech about to my graduating class in high school. So when I saw the Marcus Aurelius quote on the first day of _Leadership and Personal Development_, my eyes lit up. The philosophy taught me to push myself physically and mentally and to not complain about adversity because I internalized the idea that hard times build character. However, not complaining about obstacles meant that I kept a plethora of feelings to myself. Negative emotions and hurtful thoughts. I thought I was taking complete ownership over them by holding on to them and using self-coaching strategies to mitigate their effects, but they inevitably leaked into my behavior and harmed my outlook.

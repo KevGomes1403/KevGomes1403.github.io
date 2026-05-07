@@ -1,6 +1,8 @@
 ---
 title: "Stop One Heart from Breaking"
 date: 2024-09-22
+categories:
+  - "personal"
 tags: 
   - "faith"
   - "gratitude"

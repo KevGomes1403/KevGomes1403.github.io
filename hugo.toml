@@ -21,6 +21,7 @@ theme   = "PaperMod"
   math = true
 
 [taxonomies]
+  tag = "tags"
   category = "categories"
 
 [menu]
@@ -30,7 +31,11 @@ theme   = "PaperMod"
     weight = 1
 
   [[menu.main]]
-    name = "Posts"
-    url = "/posts/"
+    name = "Technical"
+    url = "/categories/technical/"
     weight = 2
 
+  [[menu.main]]
+    name = "Personal"
+    url = "/categories/personal/"
+    weight = 3

@@ -1,6 +1,8 @@
 ---
 title: "Lasting Relationships"
 date: 2022-05-30
+categories:
+  - "personal"
 tags: 
   - "love"
   - "relationships"

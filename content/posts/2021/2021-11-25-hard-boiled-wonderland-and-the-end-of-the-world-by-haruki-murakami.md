@@ -1,6 +1,10 @@
 ---
 title: "Hard-Boiled Wonderland and the End of the World by Haruki Murakami"
 date: 2021-11-25
+categories:
+  - "personal"
+tags:
+  - "books"
 ---
 
 ## What It's About

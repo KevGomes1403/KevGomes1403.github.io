@@ -1,9 +1,10 @@
 ---
 title: "Flattering People Through Psychology"
 date: 2022-06-26
-categories: 
-  - "books"
+categories:
+  - "personal"
 tags: 
+  - "books"
   - "psychology"
 ---
 

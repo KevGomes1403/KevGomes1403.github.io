@@ -1,6 +1,10 @@
 ---
 title: "Dune by Frank Herbert"
 date: 2021-04-02
+categories:
+  - "personal"
+tags:
+  - "books"
 ---
 
 ## What It's About
