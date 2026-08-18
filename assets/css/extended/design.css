@@ -1,0 +1,443 @@
+/* ============================================================
+   Design: "Zen Minimal"
+   Ma (negative space), sumi-ink charcoal on warm paper,
+   Shippori Mincho headings, Zen Kaku Gothic New body,
+   a single vermillion (shu-iro) accent used as a seal mark.
+   No cards, no rules where whitespace can do the work.
+   ============================================================ */
+
+:root {
+    --radius: 0;
+    --main-width: 620px;
+    --gap: 28px;
+
+    --theme: #f7f5f0;
+    --entry: transparent;
+    --primary: #262523;
+    --secondary: #8b867c;
+    --tertiary: #e5e1d8;
+    --content: #33312d;
+    --code-block-bg: #1e1d1a;
+    --code-bg: #eeebe3;
+    --border: #e7e3da;
+    --accent: #c1442e;
+    --quote: #56524a;
+
+    --font-mincho: "Shippori Mincho", "Iowan Old Style", Georgia, serif;
+    --font-sans: "Zen Kaku Gothic New", "Avenir Next", "Helvetica Neue", sans-serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+
+.dark {
+    --theme: #141412;
+    --entry: transparent;
+    --primary: #ece9e0;
+    --secondary: #a5a196;
+    --tertiary: #2f2e2a;
+    --content: #dfdbd1;
+    --code-block-bg: #1b1a17;
+    --code-bg: #212019;
+    --border: #2b2a26;
+    --accent: #e07a5c;
+    --quote: #c9c5ba;
+}
+
+/* ---------- base ---------- */
+
+body {
+    font-family: var(--font-sans);
+    font-size: 17px;
+    line-height: 1.9;
+    letter-spacing: 0.005em;
+    -webkit-font-smoothing: antialiased;
+}
+
+.list {
+    background: var(--theme);
+}
+
+.dark.list {
+    background: var(--theme);
+}
+
+::selection {
+    background: var(--tertiary);
+    color: var(--primary);
+}
+
+.main {
+    padding-top: 40px;
+}
+
+/* ---------- header / nav ---------- */
+
+.header {
+    border-bottom: none;
+}
+
+.nav {
+    padding-top: 18px;
+}
+
+.logo a {
+    font-family: var(--font-mincho);
+    font-weight: 500;
+    font-size: 19px;
+    letter-spacing: 0.06em;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* the seal mark: a single vermillion square before the name */
+.logo a::before {
+    content: "";
+    display: inline-block;
+    width: 0.5em;
+    height: 0.5em;
+    background: var(--accent);
+    margin-right: 0.65em;
+    flex-shrink: 0;
+}
+
+#menu a span {
+    font-family: var(--font-sans);
+    font-size: 13.5px;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    color: var(--secondary);
+}
+
+#menu a span.active {
+    color: var(--primary);
+    border-bottom: 1px solid var(--accent);
+    padding-bottom: 3px;
+}
+
+#menu a:hover span {
+    color: var(--primary);
+}
+
+/* ---------- list pages: title + date, whitespace as separator ---------- */
+
+.page-header {
+    margin: 40px auto var(--content-gap);
+}
+
+.page-header h1 {
+    font-family: var(--font-mincho);
+    font-weight: 500;
+    font-size: 26px;
+    letter-spacing: 0.04em;
+}
+
+.post-entry,
+.first-entry {
+    margin-bottom: 44px;
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    gap: 6px;
+}
+
+.post-entry:active,
+.first-entry:active {
+    transform: none;
+    background: transparent;
+}
+
+.first-entry .entry-header h1,
+.entry-header h2 {
+    font-family: var(--font-mincho);
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.post-entry:hover .entry-header h2,
+.first-entry:hover .entry-header h1 {
+    color: var(--accent);
+}
+
+/* whitespace over summaries: entries are just title + date */
+.post-entry .entry-content,
+.first-entry .entry-content {
+    display: none;
+}
+
+.entry-footer,
+.post-meta,
+.breadcrumbs {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    color: var(--secondary);
+}
+
+.pagination a {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    color: var(--secondary);
+    font-size: 13px;
+    letter-spacing: 0.1em;
+}
+
+.pagination a:hover {
+    color: var(--accent);
+}
+
+/* ---------- single post ---------- */
+
+.post-header {
+    margin: 56px auto 64px;
+    text-align: center;
+}
+
+.post-header .breadcrumbs {
+    margin-bottom: 14px;
+}
+
+.post-title {
+    font-family: var(--font-mincho);
+    font-weight: 500;
+    font-size: 29px;
+    line-height: 1.45;
+    letter-spacing: 0.02em;
+    margin-bottom: 14px;
+}
+
+.post-description {
+    color: var(--secondary);
+}
+
+.post-content {
+    font-size: 18px;
+    line-height: 1.95;
+    color: var(--content);
+}
+
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4 {
+    font-family: var(--font-mincho);
+    font-weight: 500;
+    letter-spacing: 0.03em;
+}
+
+.post-content h2 {
+    margin: 64px auto 24px;
+    font-size: 22px;
+}
+
+.post-content h3 {
+    margin: 44px auto 18px;
+    font-size: 19px;
+}
+
+.post-content p {
+    margin-bottom: 24px;
+}
+
+/* links: quiet by default, vermillion on hover */
+.post-content a,
+.home-text a {
+    box-shadow: none;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-decoration-color: var(--tertiary);
+    text-underline-offset: 4px;
+    color: inherit;
+}
+
+.post-content a:hover,
+.home-text a:hover {
+    color: var(--accent);
+    text-decoration-color: var(--accent);
+}
+
+.post-content a code {
+    box-shadow: none;
+}
+
+/* quotes set in Mincho, no heavy rule */
+.post-content blockquote {
+    margin: 36px 0;
+    padding: 0 0 0 26px;
+    border-inline-start: 1px solid var(--secondary);
+    font-family: var(--font-mincho);
+    color: var(--quote);
+    font-size: 17.5px;
+    line-height: 2;
+}
+
+/* hr: a short centered stroke, not a full rule */
+.post-content hr {
+    margin: 56px auto;
+    width: 40px;
+    height: 1px;
+    background: var(--secondary);
+    opacity: 0.5;
+}
+
+.post-content figure > figcaption,
+.post-content figure > figcaption > p {
+    color: var(--secondary);
+    font-size: 12.5px;
+    letter-spacing: 0.08em;
+    font-style: normal;
+}
+
+/* code */
+.post-content code {
+    font-family: var(--font-mono);
+    font-size: 0.8em;
+    background: var(--code-bg);
+    border-radius: 2px;
+}
+
+.post-content pre code {
+    font-size: 13px;
+    line-height: 1.7;
+    border-radius: 0;
+}
+
+.post-content .highlight,
+.post-content pre {
+    border-radius: 0;
+}
+
+/* tables */
+.post-content table th,
+.post-content table td {
+    border-bottom: 1px solid var(--border);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    font-size: 14.5px;
+}
+
+.post-content table th {
+    font-family: var(--font-sans);
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    color: var(--secondary);
+}
+
+/* toc */
+.toc {
+    border: none;
+    border-radius: 0;
+    background: var(--code-bg);
+}
+
+/* post nav */
+.paginav {
+    background: transparent;
+    border: none;
+    border-top: 1px solid var(--border);
+    border-radius: 0;
+}
+
+.paginav .title {
+    letter-spacing: 0.12em;
+    font-size: 11px;
+}
+
+/* ---------- footer ---------- */
+
+.footer {
+    border-top: none;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    color: var(--secondary);
+    padding-top: 40px;
+}
+
+.footer a {
+    color: var(--secondary);
+}
+
+/* ---------- home intro ---------- */
+
+.home-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    margin-top: 48px;
+    text-align: left;
+}
+
+.home-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+/* zoomed circular crop centered on the subject (face ≈ x 54%, y 42% of the
+   2160×1440 source; window ≈ 700px square starting at x 810, y 300) */
+.photo-frame {
+    width: 224px;
+    height: 224px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.photo-frame img {
+    position: absolute;
+    width: 188.6%;
+    height: auto;
+    max-width: none;
+    left: -50.7%;
+    top: -22.9%;
+}
+
+.home-social {
+    display: flex;
+    gap: 18px;
+}
+
+.home-social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    color: var(--secondary);
+}
+
+.home-social a:hover {
+    color: var(--accent);
+}
+
+.home-social svg {
+    display: block;
+    fill: currentColor;
+    width: 18px;
+    height: 18px;
+}
+
+.home-text {
+    max-width: 540px;
+    font-size: 17px;
+    line-height: 2;
+    color: var(--content);
+}
+
+.home-text p {
+    margin-bottom: 20px;
+}
+
+.home-text .home-nav {
+    margin-top: 36px;
+    color: var(--secondary);
+    font-size: 16px;
+    text-align: center;
+}
